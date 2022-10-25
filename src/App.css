@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e2e8e0;  
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: #090909;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+.cart {
+    font-size: 26px;
+}
