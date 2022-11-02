@@ -16,10 +16,43 @@ header {
     height: 70px;
 }
 
-.nav-link {
-    margin-right: 15px;
+.logo {
+    cursor: pointer;
+}
+
+.itemList ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemList ul li{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cartContainer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .cart {
     font-size: 26px;
+}
+
+.quantCart{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    color: #090909;
+    background-color: #e2e8e0;
+    text-align: center;
+    top: 0;
+    left: 75%;
+    border-radius: 60%;
 }

@@ -1,15 +1,18 @@
-import { BsCart2 } from 'react-icons/bs';
+import CartWidget from './CartWidget.jsx';
+import ItemListContainer from './ItemListContainer';
 
 const Header = () => {
     return (
         <header>
             <h1 className='logo'>ReactStore</h1>
-            <nav>
-                <a href="#" className="nav-link">Categoría 1</a>
-                <a href="#" className="nav-link">Categoría 2</a>
-                <a href="#" className="nav-link">Categoría 3</a>
+            <nav className='itemList'>
+                <ItemListContainer
+                    itemUno = "Categoría 1"
+                    itemDos = "Categoría 2"
+                    itemTres = "Categoría 3"
+                />
             </nav>
-            <BsCart2 className='cart' value="13"/>
+            <CartWidget />
         </header>
     )
 }
