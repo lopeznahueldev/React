@@ -12,7 +12,7 @@ const CardContainer = () => {
         <div>
             <CardItem
                 id={Products.id}
-                image={Products.image.firstImage}
+                image={Products.image}
                 name={Products.name}
                 quant={Products.quant}
                 price={Products.price}
