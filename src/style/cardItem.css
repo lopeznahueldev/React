@@ -1,5 +1,14 @@
 .cardItem {
-    border: 1px solid #801d7b;
     height: 400px;
     width: 280px;
+    margin: 20px; 
+}
+
+.cardItem img {
+    width: 100%;
+    margin-bottom: 5px; 
+}
+
+.cardItem h4 {
+    margin-bottom: 3px; 
 }

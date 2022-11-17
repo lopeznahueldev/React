@@ -1,12 +1,12 @@
 import './App.css';
 import NavBar from './components/header/NavBar';
-import CardContainer from './components/main/CardContainer';
+import ItemListContainer from './components/main/ItemListContainer';
 
 const App = () => {
   return (
     <>
     <NavBar />
-    <CardContainer />
+    <ItemListContainer />
     </>
   )
 }

@@ -1,16 +1,15 @@
 import CartWidget from './CartWidget';
-import ItemListContainer from './ItemListContainer';
 
 const Header = () => {
     return (
         <header>
                 <h1 className='logo'>CLOTHING</h1>
                 <nav className='itemList'>
-                    <ItemListContainer
-                        itemUno = "HOODIE"
-                        itemDos = "SHIRT"
-                        itemTres = "SHOE"
-                    />
+                    <ul>
+                        <li>HOODIE</li>
+                        <li>SHIRT</li>
+                        <li>SHOE</li>
+                    </ul>
                 </nav>
                 <CartWidget />
         </header>
