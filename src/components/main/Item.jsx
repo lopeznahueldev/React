@@ -1,8 +1,11 @@
 import "../../style/cardItem.css"
-import ButtonAddCart from './ButtonAddCart';
 import {Link} from "react-router-dom"
+import { CartContext } from './CartContext';
+import { useContext } from 'react';
 
 const Item = ({ id, imageUrl, name, quant, price }) => {
+    const { addToCart } = useContext(CartContext);
+
     return(
         <div className="cardItem">
             <Link to={`/item/${id}`}>
@@ -14,7 +17,7 @@ const Item = ({ id, imageUrl, name, quant, price }) => {
                 </div>
             </Link>
             <hr />
-            <ButtonAddCart />
+            <button onClick={addToCart}>Add to Cart</button>
         </div>
     )
 }
