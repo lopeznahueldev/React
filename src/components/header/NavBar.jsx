@@ -12,7 +12,7 @@ const Header = () => {
                         <li><Link to='/category/3'>SHOE</Link></li>
                     </ul>
                 </nav>
-                <CartWidget />
+                <Link to='/cart'><CartWidget /></Link>
         </header>
     )
 }

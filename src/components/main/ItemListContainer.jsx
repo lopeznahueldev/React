@@ -10,11 +10,11 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         if(idCategory === undefined) {
-            customFetch(2000, products)
+            customFetch(500, products)
             .then(resp => setDatos(resp))
             .catch(err => console.log(err))
         } else {
-            customFetch(2000, products.filter(item => item.categoryId == idCategory))
+            customFetch(700, products.filter(item => item.categoryId == idCategory))
             .then(resp => setDatos(resp))
             .catch(err => console.log(err))
         }
