@@ -1,10 +1,6 @@
-import "../../style/cardItem.css"
-import {Link} from "react-router-dom"
-import { CartContext } from './CartContext';
-import { useContext } from 'react';
+import { Link } from "react-router-dom"
 
 const Item = ({ id, imageUrl, name, quant, price }) => {
-    const { addToCart } = useContext(CartContext);
 
     return(
         <div className="cardItem">
@@ -17,7 +13,6 @@ const Item = ({ id, imageUrl, name, quant, price }) => {
                 </div>
             </Link>
             <hr />
-            <button onClick={addToCart}>Add to Cart</button>
         </div>
     )
 }

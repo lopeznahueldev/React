@@ -18,20 +18,22 @@ const ItemDetail = ({ item }) => {
             item
             ? 
             <>
-                <div>
+                <div className='itemDetail'>
                     <div>
-                        <img src={item.image} />
+                        <img className='ImageDetail' src={item.image} />
                     </div>
                     <div>
-                        <h3>{item.name}</h3>
-                        <h5>Quantity: {item.quant}</h5>
-                        <h4>${item.price}.00</h4>
+                        <div className='infoDetail'>
+                            <h3>{item.name}</h3>
+                            <h5>Quantity: {item.quant}</h5>
+                            <h4>${item.price}.00</h4>
+                        </div>
+                            {
+                                itemCount === 0
+                                ? <ItemCount stock={item.quant} initial={itemCount} onAdd={onAdd} />
+                                : <Link to='/cart'><button className='buttonCount'>CONFIRM</button></Link>
+                            }
                     </div>
-                    {
-                        itemCount === 0
-                        ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                        : <Link to='/cart'><button>CONFIRM</button></Link>
-                    }
                 </div>
             </>
             : <p>CARGANDO...</p>

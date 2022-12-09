@@ -2,7 +2,7 @@ import Item from "./Item";
 
 const ItemList = ({ items }) => {
     return(
-        <div className="">
+        <div className="itemContainer">
             {
                 items.map(item => 
                     <Item
