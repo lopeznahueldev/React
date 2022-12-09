@@ -80,11 +80,11 @@ const Cart = () => {
                             <h2>ORDER SUMMARY</h2>
                             <div>
                                 <h4>SUBTOTAL</h4>
-                                <h4>{test.calcSubTotal()}</h4>
+                                <h4>${test.calcSubTotal()}</h4>
                             </div>
                             <div>
                                 <h2>TOTAL</h2>
-                                <h2>{test.calcTotal()}</h2>
+                                <h2>${test.calcTotal()}</h2>
                             </div>
                             <button className="button" onClick={createOrder}>CHECKOUT NOW</button>
                         </div>
